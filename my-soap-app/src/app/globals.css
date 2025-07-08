@@ -1,16 +1,3 @@
-HEAD
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Adicione estilos globais para as transições de tema */
-html.dark {
-  /* Estilos para o modo escuro */
-}
-body {
-  @apply transition-colors duration-300 ease-in-out;
-}
-
 @import "tailwindcss";
 
 :root {
@@ -37,4 +24,3 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
- b7bde11682e6211457de1d8e78ee5dd3e8cf42f5

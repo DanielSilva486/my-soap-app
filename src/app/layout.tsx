@@ -1,10 +1,9 @@
 // src/app/layout.tsx
-import './globals.css'; // Importa seus estilos globais
+import './globals.css';
 import { ThemeProvider } from '@/contexts/ThemeContext'; // Importa o ThemeProvider
 
 // Importe a fonte Inter do Google Fonts se ainda não o fez no globals.css
 // Ou adicione o link no head aqui, ou use next/font
-// Para simplificar, vou assumir que você está importando via CSS no globals.css
 // @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 export const metadata = {
