@@ -1,40 +1,12 @@
-HEAD
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Adicione estilos globais para as transições de tema */
-html.dark {
-  /* Estilos para o modo escuro */
-}
+/* Estilos globais para transições de tema */
 body {
   @apply transition-colors duration-300 ease-in-out;
 }
 
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html {
+  font-family: 'Inter', sans-serif; /* Ou sua fonte preferida */
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
- b7bde11682e6211457de1d8e78ee5dd3e8cf42f5
