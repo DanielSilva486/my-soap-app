@@ -1,12 +1,14 @@
 // tailwind.config.ts
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from 'tailwindcss'
+
+const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  darkMode: 'class', // Habilita o dark mode baseado na classe 'dark'
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -31,15 +33,24 @@ module.exports = {
         'dark-border': '#334155',
       },
       boxShadow: {
-        // Sombras para ambos os temas
         'light': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
         'dark': '0 20px 25px -5px rgba(0, 0, 0, 0.25), 0 10px 10px -5px rgba(0, 0, 0, 0.1)',
       },
       borderRadius: {
         'lg': '8px',
         'xl': '12px',
-      }
+      },
+      transitionProperty: {
+        'colors': 'color, background-color, border-color, text-decoration-color, fill, stroke',
+      },
+      transitionDuration: {
+        '300': '300ms',
+      },
+      transitionTimingFunction: {
+        'ease-in-out': 'ease-in-out',
+      },
     },
   },
   plugins: [],
 }
+export default config
