@@ -1,10 +1,10 @@
-const config = {
-HEAD
- tailwindcss: {},
+// postcss.config.mjs
+// Garanta que NÃO haja nenhum outro texto, caracteres estranhos ou marcadores de conflito
+// antes ou depois deste bloco.
+
+export default {
+  plugins: {
+    tailwindcss: {},
     autoprefixer: {},
-
-  plugins: ["@tailwindcss/postcss"],
-b7bde11682e6211457de1d8e78ee5dd3e8cf42f5
+  },
 };
-
-export default config;
